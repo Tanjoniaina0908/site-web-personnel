@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+  <title>Accueil</title>
+  <style>
+    input[type="radio"] {
+      display: none;
+    }
+  </style>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  bonjour  
+  <div class="container">
+    <!-- Image fixe à gauche -->
+    <div class="image-container">
+      <img src="images whatsapp.jpg"
+     width="40%" height="100%" alt="Logo Fixe" class="Image-fixe">
+    </div>
+    <!-- contenue principal -->
+    <div class="content">
+      <nav>
+        <a href="accueil.pdf" target="contenu">Accueil</a>
+        <a href="Apropos.html" target="contenu">A propos</a>
+        <a href="cv-tanjona.pdf" target="contenu" >CV</a>
+        <a href="porfolio.pdf" target="contenu" >Porfolio</a>
+        <a href="" target="contenu">contact</a>
+      </nav>
+      <iframe id="content-frame" name="content-frame" 
+      src="accueil.pdf" frameborder="0"></iframe>
+      
+      <!-- barre de téléchargement dynamique -->
+      <div id="download-bar">
+        <a id="dowload-btn" href="accueil.pdf"
+    download="Mon_accueil.pdf">Télécharger</a>
+        <a id="dowload-btn" href="cv-tanjona.pdf"
+    download="Mon_cv.pdf">Télécharger</a>
+        <a id="dowload-btn" href="porfolio.pdf"
+    download="Mon_porfolio.pdf">Télécharger</a>
+      </div>
+      <!-- section des logos en bas -->
+       <div class="logos">
+        <img src="github.png" alt="github">
+        <img src="FB.jpeg" alt="FB">
+        <img src="netlify.png" alt="netlify">
+       </div>
+
+    </div> 
+  </div>
+  <!-- contener PDF avec bouton de téléchargement -->
+  
+  
+  
+  <!-- <div class="contenu">
+    <h1>Page web avec un Logo Fixe en Bas</h1>
+    <div class="section">
+      <p>Voici un exemple de page avec du contenu qui fait défiler la page. 
+        Le logo reste toujours en bas.
+      </p>
+    </div>
+  </div> -->
+ 
+  
 </body>
 
 </html>
