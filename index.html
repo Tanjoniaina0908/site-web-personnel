@@ -2,68 +2,135 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-content="width=device-width,initial-scale=1.0">
-  <title>Accueil</title>
-  <style>
-    input[type="radio"] {
-      display: none;
-    }
-  </style>
-<link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Overplay</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Image fixe à gauche -->
-    <div class="image-container">
-      <img src="images whatsapp.jpg"
-     width="40%" height="100%" alt="Logo Fixe" class="Image-fixe">
-    </div>
-    <!-- contenue principal -->
-    <div class="content">
-      <nav>
-        <a href="accueil.pdf" target="contenu">Accueil</a>
-        <a href="Apropos.html" target="contenu">A propos</a>
-        <a href="cv-tanjona.pdf" target="contenu" >CV</a>
-        <a href="porfolio.pdf" target="contenu" >Porfolio</a>
-        <a href="" target="contenu">contact</a>
-      </nav>
-      <iframe id="content-frame" name="content-frame" 
-      src="accueil.pdf" frameborder="0"></iframe>
-      
-      <!-- barre de téléchargement dynamique -->
-      <div id="download-bar">
-        <a id="dowload-btn" href="accueil.pdf"
-    download="Mon_accueil.pdf">Télécharger</a>
-        <a id="dowload-btn" href="cv-tanjona.pdf"
-    download="Mon_cv.pdf">Télécharger</a>
-        <a id="dowload-btn" href="porfolio.pdf"
-    download="Mon_porfolio.pdf">Télécharger</a>
-      </div>
-      <!-- section des logos en bas -->
-       <div class="logos">
-        <img src="github.png" alt="github">
-        <img src="FB.jpeg" alt="FB">
-        <img src="netlify.png" alt="netlify">
-       </div>
+<img src="./images whatsapp.jpg" alt="Image Fixe" class="image-fixe">
+<div class="contenu">
+    <header>
+        <!-- <h1>Mon Site</h1> -->
+        <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button> -->
+    </header>
+    <h1>RAMPANJATOMAHARAVO Misantatra Tanjoniaina</h1>
 
-    </div> 
-  </div>
-  <!-- contener PDF avec bouton de téléchargement -->
-  
-  
-  
-  <!-- <div class="contenu">
-    <h1>Page web avec un Logo Fixe en Bas</h1>
-    <div class="section">
-      <p>Voici un exemple de page avec du contenu qui fait défiler la page. 
-        Le logo reste toujours en bas.
-      </p>
-    </div>
-  </div> -->
- 
-  
+   <!-- Menu overlay -->
+   <input type="checkbox" id="menu-toggle">
+   <!-- now create a toggle button here -->
+   <input type="checkbox">
+   <div class="toggle">
+       <span class="common top_line"></span>
+       <span class="common middle_line"></span>
+       <span class="common button"></span>
+   </div>
+
+   <div id="menu-overlay">
+       <!-- <label for="menu-toggle" id="close-menu">&times;</label> -->
+
+       <ul>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+       </ul>
+   </div>
+
+   <!-- Contenus liés aux onglets -->
+   <section id="content">
+       <div id="home" class="tab-content">
+           <h2>Home</h2>
+           <p>Bienvenue sur la page d'accueil !</p>
+       </div>
+       <div id="portfolio" class="tab-content">
+           <h2>Portfolio</h2>
+           <p>Découvrez mes projets ici.</p>
+           <div class="projet">
+            <a href="#"><img src="./projet (portfolio).png" width="400px" height="400px" alt="portfolio"></a>
+            <a href="#"><img src="./projet (brochure).png" width="400px" height="400px" alt="brochure"></a>
+            <a href="#"><img src="./collage-arriere-plan-programmation_23-2149901789.jpg" 
+               width="400px" height="400px" alt="html et css"></a>
+            <a href="#"><img src="./github.png" alt="github"></a>
+            <a href="#"><img src="./certificat css TANJONA.png" width="400px" height="400px" alt="css"></a>
+           </div>
+       </div>
+       <div id="about" class="tab-content">
+           <h2>About</h2>
+           <p>En savoir plus sur moi.</p>
+           <blockquote>à propos de moi. Un text sur moi:
+            J'étudie l'Informatique Mathématique à Ankatso dans la faculté des sciences.
+            En même temps je fais un autre formation dans le domaine de l'Informatique 
+            pour devenir un developpeur web. Je suis passionner à l'Informatique
+            et pour ça que j'étudie et faire de effort pour réussir à cette formation.
+            Le domaine de l'Informatique est  très vastes, mais j'aivait fait quelque 
+            formation sur ce domaine comme l'informatique bureautique.
+            (Word ,Excel, Powepoint,Publisher, Acces)
+            
+           </blockquote>
+           <h3>Mes Compétences</h3>
+            <div class="ensemble">
+                <div class="photoshop">
+                    <label for="photoshop">Photoshop</label>
+                    <progress id="photoshop" value="60"  max="100">60%</progress>
+                </div>
+                <div class="dossierhtml">
+                    <label for="html">HTML</label>
+                    <progress id="html" value="75" max="100">75%</progress>
+                </div>
+                <div class="dossiercss">
+                    <label for="css">CSS</label>
+                    <progress id="css" value="60" max="100">60%</progress>
+                </div>
+            </div>
+            
+           <div class="download">
+                <img src="./bouton de téléchargement.png" width="10px" height="10px" alt="">
+                <a href="cv-tanjona.pdf">télécharger le cv</a>
+            </div>
+           
+       </div>
+       <div id="contact" class="tab-content">
+            <h2>Contact</h2>
+            <p>Contactez-moi pour plus d'infos.</p>
+            <div class="dwell">
+                <img src="./localisation.png" width="20px" height="20px" alt="">
+                <p>Antananarivo, Tsiadana , MADAGASCAR</p>
+            </div>
+            <img src="./IMAGE de localisation.jpg" alt="">
+            <div class="téléphone">
+                <img src="./téléphone.png" width="20px" height="20px" alt="">
+                <a href=tel:"+206329657031 ">+206 32 96 57031</a>
+            </div>
+            <div class="email">
+                <img src="./email.jpg" width="30px" height="30px" alt="">
+                <a href="misantatratanjoniaina@gmail.com">misantatratanjoniaina@gmail.com</a>
+            </div>
+       </div>
+       <div class="form-container">
+        <h2>Contactez-moi.Envoyer un message.</h2>
+        <form action="">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" 
+            name="nom" placeholder="Entrer votre nom">
+            <label for="email">Email</label>
+            <input type="text" id="email"
+            email="email" placeholder="Votre address email">
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet"
+            sujet="sujet" placeholder="sujet">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4"
+            placeholder="Ecriver ici ...."></textarea>
+            <button
+            type="submit">Envoyer</button>
+        </form>
+       </div>
+    </section>
+</div>
+    <footer>
+        <img src="./reseau sociaux.png" width="200px" height="80px" alt="">
+    </footer>
 </body>
 
 </html>
