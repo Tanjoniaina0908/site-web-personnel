@@ -2,6 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url(./flat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image-fixe{
@@ -10,6 +13,18 @@ body {
   
   width: 450px;
   height: auto;
+}
+
+#fullname{
+  align-items: center;
+  justify-content: center;
+}
+
+.regroupment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: centerss;
 }
 
 .name{
@@ -248,6 +263,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
   }
+
   @media (max-width:1130px){
     .image-fixe{
       position: relative;
@@ -261,14 +277,24 @@ text-align: center;
       flex-direction: columns;
       flex-direction: row;
     }
+    footer{
+      display: flex;
+      flex-direction: row;
+    }
   }
+
   @media (max-width: 560px) {
     blockquote{
       font-weight: bold;
       font-size: 30px;
     }
     .image-fixe{
-      width: 450px;
+      width: 500px;
       height: 600px; ;
     }
+    footer{
+      display: flex;
+      flex-direction: row;
+    }
   }
+
