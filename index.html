@@ -14,19 +14,32 @@
         <!-- <h1>Mon Site</h1> -->
         <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button> -->
     </header>
-    <h1>RAMPANJATOMAHARAVO Misantatra Tanjoniaina</h1>
-
+    <div class="name">
+        <h1>RAMPANJATOMAHARAVO Misantatra Tanjoniaina</h1>
+        <p>Developpeur Web</p>
+        <div class="download">
+            <img src="./bouton de téléchargement.png" width="10px" height="10px" alt="">
+            <a href="cv-tanjona.pdf">télécharger le cv</a>
+        </div>
+    </div>
    <!-- Menu overlay -->
-   <input type="checkbox" id="menu-toggle">
    <!-- now create a toggle button here -->
-   <input type="checkbox">
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+   <!-- <input type="checkbox">
    <div class="toggle">
        <span class="common top_line"></span>
        <span class="common middle_line"></span>
        <span class="common button"></span>
-   </div>
+   </div> -->
 
-   <div id="menu-overlay">
+   <nav id="menu-overlay">
        <!-- <label for="menu-toggle" id="close-menu">&times;</label> -->
 
        <ul>
@@ -35,7 +48,7 @@
            <li><a href="#about">About</a></li>
            <li><a href="#contact">Contact</a></li>
        </ul>
-   </div>
+   </nav>
 
    <!-- Contenus liés aux onglets -->
    <section id="content">
@@ -51,8 +64,8 @@
             <a href="#"><img src="./projet (brochure).png" width="400px" height="400px" alt="brochure"></a>
             <a href="#"><img src="./collage-arriere-plan-programmation_23-2149901789.jpg" 
                width="400px" height="400px" alt="html et css"></a>
-            <a href="#"><img src="./github.png" alt="github"></a>
             <a href="#"><img src="./certificat css TANJONA.png" width="400px" height="400px" alt="css"></a>
+            <a href="#"><img src="./github.png" alt="github"></a>
            </div>
        </div>
        <div id="about" class="tab-content">
