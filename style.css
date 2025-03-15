@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-decoration: aliceblue;
 }
 
 .image-fixe{
@@ -105,7 +104,7 @@ progress{
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 20px;
+  width: 30px;
   height: 25px;
   display: flex;
   flex-direction: column;
@@ -135,24 +134,25 @@ span:nth-child(3){
   rotate(-45deg);
 }
 
-.menu-overlay{
+#menu-overlay{
 
   position: fixed;
   top: 0;
-  right: -250px;
+  right: -100%;
   width: 250px;
   height: 100%;
   background: #333;
   color: white;
-  transition: right 0.3s;
+  transition: right 0.3s ease-in-out;
   padding-top: 60px;
 }
-#menu-toggle:checked~ .sidebar {
+#menu-toggle:checked~ #menu-overlay {
   right: 0;
 }
 .menu-overlay ul{
   list-style: none;
   padding: 0;
+  text-align: center;
  }
 .menu-overlay ul li{
 padding: 15px;
@@ -161,46 +161,14 @@ text-align: center;
 .menu-overlay ul li a{
   color: white;
   text-decoration: none;
+  font-size: 20px;
   display: block;
 }
 .menu-overlay ul li a:hover{
-  background: #555;
+  background: black;
 }
 
-/* .toggle{
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    top: 30px;
-    left: 20px;
-    border: 0.8px solid rgba(255,255,255,0.2);
-    cursor: pointer;
-    border-radius: 2px;
-    z-index: 1;
-  }
 
-  .toggle .common{
-    position: absolute;
-    height: 2px;
-    width: 20px;
-    left: 50px;
-    background: #fff;
-    border-radius: 50px;
-    transform: translate(-50%,-50%);
-    transition:height 0.3s ease;
-  }
-
-  .toggle .top_line{
-    top: 30%;
-  }
-
-  .toggle .middle_line{
-    top: 30%;
-  }
-
-  .toggle .bottom_line{
-    top: 30%;
-  } */
  ul li {
     list-style: none;
   }
@@ -280,4 +248,4 @@ text-align: center;
     align-items: center;
     justify-content: center;
   }
-  @media ()
+  @media 
