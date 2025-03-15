@@ -290,7 +290,7 @@ text-align: center;
     }
     footer{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     }
   }
 
