@@ -15,10 +15,6 @@ body {
   height: auto;
 }
 
-#fullname{
-  align-items: center;
-  justify-content: center;
-}
 
 .regroupment{
   display: flex;
@@ -290,7 +286,7 @@ text-align: center;
     }
     .image-fixe{
       width: 500px;
-      height: 600px; ;
+      height: auto; ;
     }
     footer{
       display: flex;
