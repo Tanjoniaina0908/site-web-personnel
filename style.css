@@ -259,6 +259,7 @@ text-align: center;
     body{
       display: flex;
       flex-direction: columns;
+      flex-direction: row;
     }
   }
   @media (max-width: 560px) {
@@ -266,4 +267,5 @@ text-align: center;
       font-weight: bold;
       font-size: 30px;
     }
+    
   }
